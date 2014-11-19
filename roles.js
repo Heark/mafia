@@ -3,9 +3,34 @@
  MAFIA ROLES
 
 */
+var roles = ["Jester", "Bodyguard",
+    "Doctor", "Investigator",
+    "Villager", "Godfather",
+    "Mafioso", "Blackmailer"
+];
 
-var roles = ["Jester", "Bodyguard", "Doctor", "Investigator", "Villager", "Godfather", "Mafioso", "Blackmailer"];
-var player = function(role, description){
- role = roles[Math.floor(Math.random()*roles.length)];
- description = this.description;
+var roll = roles[Math.floor(Math.random() *
+    roles.length)];
+
+var player = function(role, description,
+    actions) {
+    role = this.role;
+    description = this.description;
+    actions = this.actions;
+};
+roll;
+if (roll = "Jester") {
+    player.role = "Jester";
+    player.description = "";
+    player.actions = jester;
+
+} else if (roll = "Bodyguard") {
+    player.role = "Bodyguard";
+    player.description = "";
+    player.actions = bodyguard;
+  
+} else if (roll = "Doctor") {
+  player.role = "Doctor";
+  player.description = "";
+  player.actions = doctor;
 }
