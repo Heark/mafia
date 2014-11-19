@@ -1,7 +1,7 @@
 /*
 #
+#       MAFIA ROLES 
 #
-#MAFIA ROLES
 */
 var dir = function(base, name){
     base = "https://raw.githubusercontent.com/Heark/mafia/master"
